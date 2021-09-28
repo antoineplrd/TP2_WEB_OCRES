@@ -214,7 +214,7 @@ nav.browse a, nav.music a {
 @media screen and (max-width:500px){
     .feature{width:60%}
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .feature{width:40%}
 }
 
