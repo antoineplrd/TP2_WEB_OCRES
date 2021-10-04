@@ -13,39 +13,63 @@
 
 <body>
 	<header>
-		<div class="wrapper">
-			<div class="logo-search">
-				<img class="pull-left" src="img/logo.png" />
-			</div>
+		<div class="row">
 
-			<form method="POST" action="index.html">
-				<input type="search" required class="search">
-				<input type="submit" name="submit" value="Rechercher" class="submit">
-			</form>
-			<div class="user">
-				<a href="#">Luke Chesser</a>
+			<div class="col-sm-2">
+
+				<div class="logo-search">
+					<img src="img/logo.png" />
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="d-none d-sm-block">
+					<form method="POST" action="index.html">
+						<input type="search" required class="search">
+						<input type="submit" name="submit" value="Rechercher" class="submit">
+					</form>
+				</div>
+			</div>
+			<!---- ca marcheeeee pas a voir <--->
+			<div class="col-sm-4">
+				<div class="dropdown">
+
+					<div class="user">
+						<button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+							Luke Chesser</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">New action</a>
+							<a class="dropdown-item" href="#">More information</a>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</header>
 	<div class="container-fluid">
 		<div class="row">
+
 			<aside class="col-sm-3">
-				<h3>Browse</h3>
-				<nav class="browse">
-					<ul class="main">
-						<li><a class="heavy" href="#">Heavy Rotation</a></li>
-						<li><a class="recent" href="#">Recent Activity</a></li>
-						<li><a class="top" href="#">Top Charts</a></li>
-						<li><a class="new" href="#">New Releases</a></li>
-					</ul>
-				</nav>
-				<h3>Your music</h3>
-				<nav class="music">
-					<ul class="main">
-						<li><a class="collection" href="#">Collection</a></li>
-						<li><a class="history" href="#">History</a></li>
-					</ul>
-				</nav>
+				<div class="d-none d-sm-block">
+					<!---- cache pour les petits ecrans-->
+					<h3>Browse</h3>
+					<nav class="browse">
+						<ul class="main">
+							<li><a class="heavy" href="#">Heavy Rotation</a></li>
+							<li><a class="recent" href="#">Recent Activity</a></li>
+							<li><a class="top" href="#">Top Charts</a></li>
+							<li><a class="new" href="#">New Releases</a></li>
+						</ul>
+					</nav>
+					<h3>Your music</h3>
+					<nav class="music">
+						<ul class="main">
+							<li><a class="collection" href="#">Collection</a></li>
+							<li><a class="history" href="#">History</a></li>
+						</ul>
+					</nav>
+				</div>
 			</aside>
 
 			<main class="col-sm-9">
@@ -62,21 +86,30 @@
 									target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
 						</div>
 					</div>
-					<div class="stats-links">
-						<section class="stats">
-							<span>2 Playlists</span>
-							<span>4 Reviews</span>
-							<span>6 Followers</span>
-							<span>13 Following</span>
-						</section>
-						<div class="links">
-							<div>
-								<a href="#">Collection</a>
-								<a href="#">History</a>
+					<div class="row">
+
+						<div class="stats-links">
+							<div class="col-sm-9">
+								<section class="stats">
+									<span>2 Playlists</span>
+									<span>4 Reviews</span>
+									<span>6 Followers</span>
+									<span>13 Following</span>
+								</section>
+							</div>
+							<div class="col-sm-3">
+								<div class="links">
+
+									<div>
+										<a href="#">Collection</a>
+										<a href="#">History</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</header>
+
 				<div class=d-flex-column justify-content-center>
 					<h2>Top Album</h2>
 					<br>
@@ -89,7 +122,7 @@
 					<section id="albums" class="album">
 						<article>
 							<figure>
-								<img src="img/album/album_01.png" />
+								<img src="img/album/album_01.png" class="img-fluid" max-width="100%" />
 								<figcaption>Native (Deluxe)</figcaption>
 							</figure>
 							<div class="artist">OneRepublic</div>
@@ -97,7 +130,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_02.png" />
+								<img src="img/album/album_02.png" class="img-fluid" max-width="100%" ; />
 								<figcaption>Wax Wings</figcaption>
 							</figure>
 							<div class="artist">Joshua Radin</div>
@@ -105,7 +138,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_03.png" />
+								<img src="img/album/album_03.png" class="img-fluid" max-width="100%" />
 								<figcaption>Modern Vampires of th...</figcaption>
 							</figure>
 							<div class="artist">Vampire Weekend</div>
@@ -113,7 +146,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_04.png" />
+								<img src="img/album/album_04.png" class="img-fluid" max-width="100%" />
 								<figcaption>Night Visions</figcaption>
 							</figure>
 							<div class="artist">Imagine Dragons</div>
@@ -121,7 +154,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_05.png" />
+								<img src="img/album/album_05.png" class="img-fluid" max-width="100%" />
 								<figcaption>Trouble Will Find Me</figcaption>
 							</figure>
 							<div class="artist">The National</div>
@@ -129,7 +162,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_06.png" />
+								<img src="img/album/album_06.png" class="img-fluid" max-width="100%" />
 								<figcaption>Native (Deluxe)</figcaption>
 							</figure>
 							<div class="artist">OneRepublic</div>
@@ -137,7 +170,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_07.png" />
+								<img src="img/album/album_07.png" class="img-fluid" max-width="100%" />
 								<figcaption>Wax Wings</figcaption>
 							</figure>
 							<div class="artist">Joshua Radin</div>
@@ -145,7 +178,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_08.png" />
+								<img src="img/album/album_08.png" class="img-fluid" max-width="100%" />
 								<figcaption>Modern Vampires of th...</figcaption>
 							</figure>
 							<div class="artist">Vampire Weekend</div>
@@ -153,7 +186,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_09.png" />
+								<img src="img/album/album_09.png" class="img-fluid" max-width="100%" />
 								<figcaption>Night Visions</figcaption>
 							</figure>
 							<div class="artist">Imagine Dragons</div>
@@ -161,7 +194,7 @@
 						</article>
 						<article>
 							<figure>
-								<img src="img/album/album_10.png" />
+								<img src="img/album/album_10.png" class="img-fluid" max-width="100%" />
 								<figcaption>Trouble Will Find Me</figcaption>
 							</figure>
 							<div class="artist">The National</div>
@@ -172,6 +205,12 @@
 				</div>
 
 			</main>
+
+
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no " />
+			<!----  permet d'eviter que l'utilisateur zoom dans votre page web pour naviguer -->
+
 </body>
 
 </html>

@@ -23,13 +23,14 @@ a {
 }
 
 body > header {
-    margin-bottom: 20px;
+    margin-bottom: 3em;
     background: white;
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
 }
 
 header .logo-search form  {
-    width: 50%;
+    width: 60%;
+
 
 }
 
@@ -38,7 +39,7 @@ header .user {
 }
 
 header .user a {
-    font-size: 13px;
+    font-size: 1em;
     color: #89949b;
     padding-top: 5px;
 }
@@ -61,7 +62,7 @@ h3 {
 }
 
 nav ul li a { 
-    font-size: 14px;
+    font-size: 1em;
     font-weight: normal;
     color: #828c92;
 }
@@ -71,7 +72,7 @@ nav ul li a:hover {
 }
 
 nav ul li {
-    margin-top: 5px;
+    margin-top: 1em;
 }
 
 main header aside img {
@@ -81,36 +82,36 @@ main header aside img {
 }
 
 nav ul li:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 3em;
 }
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
+    font-size: 3em;
     font-weight: normal;
     margin: 0 0 8px 0;
 }
 
 .name p { 
     color: #a0aab1;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .name p img { 
-    margin-left: 12px;
+    margin-left: 1em;
 }
 
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
+    font-size: 1em;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 .stats-links span, .stats-links a {
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 .stats-links a:last-child {
@@ -118,13 +119,13 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -136,12 +137,12 @@ header form {
 input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
-    height: 28px;
-    width: 100%;
-    font-size: 13px;
-    padding: 3px 6px 3px 25px;
+    height: 2em;
+    width: 45%;
+    font-size: 1em;
+    padding-left: 30px;
     border: 1px solid #d0dde9;
-    margin: 0;
+    margin: 10px;
     border-radius: 15px;
     top: 11px;
     box-shadow: inset 1px 1px 5px #d5d5d5;
@@ -152,7 +153,7 @@ input.submit {
 }
 
 .station {
-    font-size: 12px;
+    font-size: 1em;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
@@ -171,7 +172,7 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 1em;
     color: #89949b;
     margin: 10px 0;
 }
@@ -211,12 +212,6 @@ nav.browse a, nav.music a {
 }
 
 
-@media screen and (max-width:500px){
-    .feature{width:60%}
-}
-@media screen and (max-width:450px){
-    .feature{width:40%}
-}
 
 
 
